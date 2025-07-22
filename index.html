@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="titulo">Portafolio | Ezequiel Bainer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Barra de navegación fija -->
+  <nav>
+    <ul>
+      <li><a href="#inicio" data-i18n="nav.inicio">Inicio</a></li>
+      <li><a href="#sobre-mi" data-i18n="nav.sobreMi">Sobre mí</a></li>
+      <li><a href="#experiencias" data-i18n="nav.experiencia">Experiencia</a></li>
+      <li><a href="#tecnologias" data-i18n="nav.tecnologias">Tecnologías</a></li>
+      <li><a href="#proyectos" data-i18n="nav.proyectos">Proyectos</a></li>
+      <li><a href="#contacto" data-i18n="nav.contacto">Contacto</a></li>
+    </ul>
+    <div class="botones-nav">
+      <button id="modo-btn" class="btn" data-i18n="boton.modo.noche">🌙 Modo nocturno</button>
+      <button id="cambiar-idioma" class="btn">EN</button>
+    </div>
+  </nav>
+
+  <!-- Sección: Presentación -->
+  <section id="inicio">
+    <h1 data-i18n="inicio.saludo">Hola, soy Ezequiel Bainer</h1>
+    <h2 data-i18n="inicio.rol">Desarrollador Web / Backend Jr.</h2>
+    <div>
+      <a href="CV_EzequielBainer_PRG_ACT.pdf" download class="btn" data-i18n="inicio.descargarCV">📄 Descargar CV</a>
+      <a href="#contacto" class="btn" data-i18n="inicio.contactame">📬 Contáctame</a>
+      <a href="https://github.com/NEBainer" target="_blank" class="btn">GitHub</a>
+      <a href="https://www.linkedin.com/in/ezequielbainer/" target="_blank" class="btn">LinkedIn</a>
+      <a href="mailto:ezzebainer@hotmail.com" class="btn">Email</a>
+    </div>
+  </section>
+
+  <!-- Sección: Sobre mí -->
+  <section id="sobre-mi">
+    <h2 data-i18n="sobremi.titulo">Sobre mí</h2>
+    <div class="contenido-sobre-mi">
+      <img src="imagen_mia.jpg" alt="Foto Mia" />
+      <p data-i18n="sobremi.descripcion">
+        Soy un entusiasta de la programación, no porque me resulte fácil, sino justamente porque me desafía constantemente. No me considero una persona que resuelve todo rápido; al contrario, suelo equivocarme, probar muchas veces y darme la cabeza contra la pared más de una vez. Pero eso es lo que más disfruto: enfrentarme a problemas difíciles, dedicarles tiempo y ver cómo, finalmente, todo encaja. Esa sensación de logro después de tanto esfuerzo es lo que me hace amar la programación. Me apasiona aprender, mejorar y construir soluciones que funcionen.
+      </p>
+    </div>
+  </section>
+  <hr />
+
+  <!-- Sección: Experiencia -->
+  <section id="experiencias">
+    <h2 data-i18n="experiencia.titulo">Experiencia</h2>
+    <ul>
+      <li>
+        <h3 data-i18n="experiencia.freelance.titulo">Desarrollador Web Freelance</h3>
+        <p data-i18n="experiencia.freelance.descripcion">
+          Desde Septiembre del 2023 hasta la actualidad, desarrollo y mantengo sitios web para pequeños negocios locales utilizando HTML, CSS, SCSS y Bootstrap, asegurando diseños responsivos y optimizados para SEO. Implemento funcionalidades interactivas con JavaScript y gestiono versiones de código mediante Git y GitHub. Además, colaboro en proyectos de código abierto en GitHub, mejorando la estructura del código y aplicando buenas prácticas de programación. También automatizo tareas repetitivas mediante scripts en Python, lo que me permite optimizar procesos y mejorar la eficiencia en la gestión de datos.
+        </p>
+      </li>
+      <!-- Agregar más si tenés -->
+    </ul>
+  </section>
+  <hr />
+
+  <!-- Sección: Tecnologías -->
+  <section id="tecnologias">
+    <h2 data-i18n="tecnologias.titulo">Tecnologías que manejo</h2>
+    <ul>
+      <li>Python</li>
+      <li>JavaScript</li>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>SQL</li>
+      <li>MongoDB</li>
+      <li>Java</li>
+      <li>GitHub</li>
+      <!-- Podés agregar íconos más adelante -->
+    </ul>
+  </section>
+  <hr />
+
+  <!-- Sección: Proyectos -->
+  <section id="proyectos">
+    <h2 data-i18n="proyectos.titulo">Proyectos</h2>
+
+    <div class="proyecto">
+      <h3 data-i18n="proyectos.nombre">Nombre del Proyecto</h3>
+      <p data-i18n="proyectos.descripcion">Descripción breve del proyecto, qué resuelve o qué hace.</p>
+      <p><strong data-i18n="proyectos.tecnologiasUsadasStrong">Tecnologías usadas:</strong> Python, Flask, MongoDB</p>
+      <a href="https://github.com/tuusuario/proyecto" target="_blank" data-i18n="proyectos.verGithub">Ver en GitHub</a>
+      <a href="https://demo.com" target="_blank" data-i18n="proyectos.verDemo">Ver demo</a>
+    </div>
+
+    <!-- Más proyectos... -->
+  </section>
+  <hr />
+
+  <!-- Sección: Contacto -->
+  <section id="contacto">
+    <h2 data-i18n="contacto.titulo">Contacto</h2>
+    <div class="contacto-contenedor">
+      <!-- Info personal -->
+      <div class="info-contacto">
+        <p>📍 Lomas de Zamora, Argentina</p>
+        <p>📞 +54 1136028457</p>
+        <p>✉️ ezzebainer@hotmail.com</p>
+      </div>
+
+      <!-- Formulario -->
+      <div class="formulario-contacto">
+        <form action="https://formsubmit.co/ezzebainer@hotmail.com" method="POST">
+          <input type="text" name="nombre" placeholder="Tu nombre" data-i18n-placeholder="contacto.form.nombre" required />
+          <input type="email" name="email" placeholder="Tu email" data-i18n-placeholder="contacto.form.email" required />
+          <textarea
+            name="mensaje"
+            rows="5"
+            placeholder="Tu mensaje"
+            data-i18n-placeholder="contacto.form.mensaje"
+            required
+          ></textarea>
+          <button type="submit" class="btn" data-i18n="contacto.form.enviar">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+  <script src="idioma.js"></script>
+</body>
+</html>

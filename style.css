@@ -1,0 +1,431 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+  padding-top: 70px;
+}
+
+a {
+  text-decoration: none;
+  color: skyblue;
+}
+
+a:hover {
+  color:white;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  align-items: center; /* Centrar verticalmente */
+  justify-content: space-between; /* Separar extremos: izquierda (ul) y derecha (botones) */
+  padding: 1rem 2rem; /* Padding horizontal un poco más amplio */
+  background-color: skyblue;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0; /* Asegurar que no tenga margen */
+  padding: 0;
+  align-items: center; /* Para que los enlaces estén centrados verticalmente */
+}
+
+nav a {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Secciones */
+section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+hr {
+  border: 1px solid #333;
+  margin: 10px auto;
+  width: 80%;
+}
+
+h2  {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+/* Botón reutilizable */
+.btn {
+  background-color: skyblue;
+  color: #333;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: color 0.3s, background-color 0.3s;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn:hover {
+  
+  color: white;
+}
+
+.botones-nav {
+  display: flex;
+  gap: 10px;
+  align-items: center; /* para que los botones estén centrados verticalmente */
+}
+
+/*Modo nocturno */
+
+.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.dark-mode nav {
+  background-color: #1f1f1f;
+}
+
+.dark-mode nav a {
+  color: #ccc;
+}
+
+.dark-mode nav a:hover {
+  color: #fff;
+}
+
+.dark-mode .btn {
+  background-color: #333;
+  color: #e0e0e0;
+  border: 1px solid #555;
+}
+
+.dark-mode .btn:hover {
+  background-color: #444;
+  color: white;
+}
+
+.dark-mode .proyecto {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+  border: 1px solid #444;
+}
+
+.dark-mode .proyecto a {
+  color: #90caf9;
+}
+
+.dark-mode .proyecto a:hover {
+  color: #ffffff;
+}
+
+.dark-mode #tecnologias li {
+  background-color: #2a2a2a;
+  color: #e0e0e0;
+}
+
+.dark-mode hr {
+  border-color: #444;
+}
+
+.dark-mode input,
+.dark-mode textarea {
+  background-color: #222;
+  color: #f0f0f0;
+  border: 1px solid #555;
+}
+
+.dark-mode .info-contacto p {
+  color: #ccc;
+}
+
+/* Inicio */
+#inicio {
+  text-align: center;
+}
+
+#inicio h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+#inicio h2 {
+  
+  color: #666;
+  
+}
+
+#inicio div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* Sobre mí */
+#sobre-mi {
+  text-align: center;
+}
+
+#sobre-mi h2 {
+  margin-top: -80px;
+  margin-bottom: 20px;
+}
+
+#sobre-mi img {
+  border: 2px solid black;
+  max-width: 270px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 15%;
+  margin-bottom: 20px;
+}
+
+.contenido-sobre-mi {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  text-align: left;
+}
+
+.contenido-sobre-mi img {
+  width: 250px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 15%;
+  border: 2px solid black;
+}
+
+/* Experiencia */
+#experiencias {
+  text-align: center;
+}
+
+#experiencias h3 {
+  color: #666;
+}
+#experiencias ul {
+  list-style: none;
+}
+
+#experiencias li {
+  margin-bottom: 30px;
+}
+
+/* Tecnologías */
+#tecnologias {
+  text-align: center;
+}
+
+#tecnologias ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  justify-content: center;
+}
+
+#tecnologias li {
+  background-color: #e0e0e0;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Proyectos */
+.proyecto {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.proyecto a {
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+/* Contacto */
+.contacto-contenedor {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.info-contacto {
+  border-right: 1px solid black;; /* Línea divisoria vertical */
+  padding-right: 20px;
+}
+
+.formulario-contacto {
+  padding-left: 20px;
+}
+
+.info-contacto p {
+  margin-bottom: 10px;
+}
+
+.formulario-contacto form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+input, textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+  font-family: inherit;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  /* Navbar: compacto */
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.5rem 1rem;
+    gap: 0.5rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+  }
+
+  nav ul li {
+    width: 100%;
+  }
+
+  nav ul li a {
+    display: block;
+    width: 100%;
+    padding: 6px 0;
+    font-size: 1rem;
+  }
+
+  .botones-nav {
+    width: 100%;
+    justify-content: flex-start;
+    gap: 5px;
+  }
+
+  .botones-nav button {
+    padding: 4px 8px;
+    font-size: 0.9rem;
+  }
+
+  /* Reducir tamaño de los títulos */
+  #inicio h1 {
+    font-size: 2rem;
+  }
+
+  #inicio h2 {
+    font-size: 1.2rem;
+  }
+
+  /* Sección Sobre mí */
+  .contenido-sobre-mi {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contenido-sobre-mi img {
+    width: 70%;
+    max-width: 220px;
+    margin-bottom: 15px;
+  }
+
+  /* Tecnologías */
+  #tecnologias ul {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px;
+    gap: 6px;
+  }
+
+  /* Contacto */
+  .contacto-contenedor {
+    flex-direction: column;
+    padding: 0 10px;
+    gap: 20px;
+  }
+
+  .info-contacto {
+    border-right: none;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .formulario-contacto {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  #inicio div .btn {
+    width: 100%;
+    max-width: 240px;
+    margin-bottom: 10px;
+  }
+}
+
+/* Opcional: ajustes para móviles muy pequeños */
+@media (max-width: 480px) {
+  #inicio h1 {
+    font-size: 1.8rem;
+  }
+
+  #inicio h2 {
+    font-size: 1.2rem;
+  }
+
+  nav {
+    padding: 0.5rem 1rem;
+  }
+
+  nav ul li a {
+    font-size: 1rem;
+  }
+
+  section {
+    padding: 40px 10px;
+  }
+}

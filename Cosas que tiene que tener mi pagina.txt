@@ -1,0 +1,21 @@
+Cosas que tiene que tener si o si:
+-Empezar con un "Hola soy" nombre, titulo y un botón con descargar cv y botón con contáctame, botón enlace a GitHub, LinkedIn y mail
+-Breve descripción mia: Agregar foto, hobbys, por que me gusta la programación
+-Experiencias(?
+-Tecnologias que manejo
+-Proyectos. Cada proyecto tiene que tener las tecnologías que maneje para hacerlos
+-Se tiene que poder descargar el cv
+-Contactame. Dividirlo en dos. Un contáctame con mi ubicación, numero de teléfono y mail en un lado. Un formulario en el otro lado
+
+Cosas optativas:
+-Poner pagina web en ingles y en español con un boton(Casi necesario si o si)
+-Modo claro y modo oscuro
+-Barra fija en donde esten los proyectos, las tecnologías, sobre mi y el contacto
+-Preview de la pagina web
+
+Cosas que me faltan implementar:
+-Hacer la pagina responsive
+-Agregar favicones para GitHub, LinkedIn e email y las tecnologías que uso
+-Agregar el preview de la pagina web
+-Corregir el motivo por el cual no se manda el email
+-Hospedar la pagina
