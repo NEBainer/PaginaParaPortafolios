@@ -2,6 +2,8 @@ const botonModo = document.getElementById('modo-btn');
 const body = document.body;
 const botonIdioma = document.getElementById("cambiar-idioma");
 let idiomaActual = localStorage.getItem("idioma") || "es";
+const hamburgerBtn = document.getElementById("hamburger-btn");
+const navMenu = document.getElementById("nav-menu");
 
 botonModo.addEventListener('click', () => {
   body.classList.toggle('dark-mode');
@@ -44,4 +46,10 @@ document.addEventListener("DOMContentLoaded", () => {
     idiomaActual = idiomaActual === "es" ? "en" : "es";
     cambiarIdioma(idiomaActual);
   });
+});
+
+
+
+hamburgerBtn.addEventListener("click", () => {
+  navMenu.classList.toggle("open");
 });

@@ -31,7 +31,7 @@ nav {
   display: flex;
   align-items: center; /* Centrar verticalmente */
   justify-content: space-between; /* Separar extremos: izquierda (ul) y derecha (botones) */
-  padding: 1rem 2rem; /* Padding horizontal un poco más amplio */
+  padding: 0.5rem 1rem; /* Padding horizontal un poco más amplio */
   background-color: skyblue;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   position: fixed;
@@ -78,6 +78,11 @@ body.dark-mode {
   color: #f0f0f0;
 }
 
+body.dark-mode .nav-menu {
+  background-color: #333; /* o el mismo fondo que el body.dark-mode */
+  color: #f0f0f0; /* o cualquier otro color oscuro que combine */
+}
+
 /* Botón reutilizable */
 .btn {
   background-color: skyblue;
@@ -100,8 +105,15 @@ body.dark-mode {
 
 .botones-nav {
   display: flex;
-  gap: 10px;
+  gap: 0.5rem;
   align-items: center; /* para que los botones estén centrados verticalmente */
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 /*Modo nocturno */
@@ -112,7 +124,7 @@ body.dark-mode {
 }
 
 .dark-mode nav {
-  background-color: #1f1f1f;
+  background-color: #333;
 }
 
 .dark-mode nav a {
@@ -159,7 +171,7 @@ body.dark-mode {
 
 .dark-mode input,
 .dark-mode textarea {
-  background-color: #222;
+  background-color: #333;
   color: #f0f0f0;
   border: 1px solid #555;
 }
@@ -250,16 +262,27 @@ body.dark-mode {
 #tecnologias ul {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 0.75rem;
+  padding-left: 0;
   list-style: none;
   justify-content: center;
 }
 
 #tecnologias li {
-  background-color: #e0e0e0;
-  padding: 10px 15px;
-  border-radius: 5px;
+  background-color: #1e1e1e;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  color: white;
   font-weight: bold;
+}
+
+.tecnologias-container {
+  display: flex;
+  flex-wrap: wrap; /* Permite que se bajen en pantallas chicas */
+  gap: 10px;
+  justify-content: center; /* Centrado horizontal */
+  margin-top: 20px;
+  padding: 10px;
 }
 
 /* Proyectos */
@@ -312,6 +335,22 @@ input, textarea {
   font-family: inherit;
 }
 
+/* Menú hamburguesa funcional */
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  z-index: 1100;
+}
+
+/* Versión nocturna */
+.dark-mode .hamburger {
+  color: #f0f0f0;
+}
+
 /* Responsivo */
 @media (max-width: 768px) {
   /* Navbar: compacto */
@@ -322,10 +361,35 @@ input, textarea {
     gap: 0.5rem;
   }
 
+  .hamburger {
+    display: block;
+    align-self: flex-end;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: skyblue;
+    padding: 1rem 0;
+  }
+
+  .nav-menu.open {
+    display: flex;
+  }
+
+  .botones-nav {
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 10px;
+  }
   nav ul {
     flex-direction: column;
-    gap: 5px;
     width: 100%;
+    padding-left: 1rem;
   }
 
   nav ul li {
@@ -334,9 +398,7 @@ input, textarea {
 
   nav ul li a {
     display: block;
-    width: 100%;
-    padding: 6px 0;
-    font-size: 1rem;
+    padding: 0.5rem 0;
   }
 
   .botones-nav {
@@ -372,14 +434,6 @@ input, textarea {
     margin-bottom: 15px;
   }
 
-  /* Tecnologías */
-  #tecnologias ul {
-    flex-direction: column;
-    align-items: flex-start;
-    padding-left: 20px;
-    gap: 6px;
-  }
-
   /* Contacto */
   .contacto-contenedor {
     flex-direction: column;
@@ -406,6 +460,8 @@ input, textarea {
     margin-bottom: 10px;
   }
 }
+
+
 
 /* Opcional: ajustes para móviles muy pequeños */
 @media (max-width: 480px) {

@@ -9,6 +9,21 @@
 <body>
   <!-- Barra de navegación fija -->
   <nav>
+  <div class="nav-header">
+    <!-- Botón Hamburguesa -->
+    <button class="hamburger" id="hamburger-btn" aria-label="Abrir menú">
+      ☰
+    </button>
+
+    <!-- Botones de idioma y modo -->
+    <div class="botones-nav">
+      <button id="modo-btn" class="btn" data-i18n="boton.modo.noche">🌙 Modo nocturno</button>
+      <button id="cambiar-idioma" class="btn">EN</button>
+    </div>
+  </div>
+
+  <!-- Menú de navegación -->
+  <div class="nav-menu" id="nav-menu">
     <ul>
       <li><a href="#inicio" data-i18n="nav.inicio">Inicio</a></li>
       <li><a href="#sobre-mi" data-i18n="nav.sobreMi">Sobre mí</a></li>
@@ -17,11 +32,9 @@
       <li><a href="#proyectos" data-i18n="nav.proyectos">Proyectos</a></li>
       <li><a href="#contacto" data-i18n="nav.contacto">Contacto</a></li>
     </ul>
-    <div class="botones-nav">
-      <button id="modo-btn" class="btn" data-i18n="boton.modo.noche">🌙 Modo nocturno</button>
-      <button id="cambiar-idioma" class="btn">EN</button>
-    </div>
-  </nav>
+  </div>
+</nav>
+
 
   <!-- Sección: Presentación -->
   <section id="inicio">
