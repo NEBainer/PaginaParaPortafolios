@@ -122,17 +122,14 @@
       <!-- Formulario -->
       <div class="formulario-contacto">
         <form action="https://formsubmit.co/ezzebainer@hotmail.com" method="POST">
-          <input type="text" name="nombre" placeholder="Tu nombre" data-i18n-placeholder="contacto.form.nombre" required />
-          <input type="email" name="email" placeholder="Tu email" data-i18n-placeholder="contacto.form.email" required />
-          <textarea
-            name="mensaje"
-            rows="5"
-            placeholder="Tu mensaje"
-            data-i18n-placeholder="contacto.form.mensaje"
-            required
-          ></textarea>
-          <button type="submit" class="btn" data-i18n="contacto.form.enviar">Enviar</button>
-        </form>
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_next" value="https://tu-dominio.com/gracias.html">
+  
+  <input type="text" name="nombre" placeholder="Tu nombre" required>
+  <input type="email" name="email" placeholder="Tu email" required>
+  <textarea name="mensaje" rows="5" placeholder="Tu mensaje" required></textarea>
+  <button type="submit" class="btn">Enviar</button>
+</form>
       </div>
     </div>
   </section>

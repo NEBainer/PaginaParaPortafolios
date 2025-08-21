@@ -29,9 +29,9 @@ a:hover {
 /* Navbar */
 nav {
   display: flex;
-  align-items: center; /* Centrar verticalmente */
-  justify-content: space-between; /* Separar extremos: izquierda (ul) y derecha (botones) */
-  padding: 0.5rem 1rem; /* Padding horizontal un poco más amplio */
+  align-items: center; 
+  justify-content: space-between; 
+  padding: 0.5rem 1rem; 
   background-color: skyblue;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   position: fixed;
@@ -44,9 +44,9 @@ nav ul {
   display: flex;
   gap: 20px;
   list-style: none;
-  margin: 0; /* Asegurar que no tenga margen */
+  margin: 0; 
   padding: 0;
-  align-items: center; /* Para que los enlaces estén centrados verticalmente */
+  align-items: center; 
 }
 
 nav a {
@@ -55,7 +55,7 @@ nav a {
 }
 
 nav ul li a {
-  white-space: nowrap; /* Impide que "Sobre mí" se parta en dos líneas */
+  white-space: nowrap; 
 }
 
 
@@ -84,8 +84,8 @@ body.dark-mode {
 }
 
 body.dark-mode .nav-menu {
-  background-color: #333; /* o el mismo fondo que el body.dark-mode */
-  color: #f0f0f0; /* o cualquier otro color oscuro que combine */
+  background-color: #333; 
+  color: #f0f0f0; 
 }
 
 /* Botón reutilizable */
@@ -111,7 +111,7 @@ body.dark-mode .nav-menu {
 .botones-nav {
   display: flex;
   gap: 0.5rem;
-  align-items: center; /* para que los botones estén centrados verticalmente */
+  align-items: center; 
 }
 
 .nav-header {
@@ -283,9 +283,9 @@ body.dark-mode .nav-menu {
 
 .tecnologias-container {
   display: flex;
-  flex-wrap: wrap; /* Permite que se bajen en pantallas chicas */
+  flex-wrap: wrap; 
   gap: 10px;
-  justify-content: center; /* Centrado horizontal */
+  justify-content: center; 
   margin-top: 20px;
   padding: 10px;
 }
@@ -314,7 +314,7 @@ body.dark-mode .nav-menu {
 }
 
 .info-contacto {
-  border-right: 1px solid black;; /* Línea divisoria vertical */
+  border-right: 1px solid black;; 
   padding-right: 20px;
 }
 
