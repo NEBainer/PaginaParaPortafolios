@@ -34,6 +34,11 @@ const traducciones = {
     "proyectos.tecnologiasUsadasStrong": "Tecnologías usadas: ",
     "proyectos.verGithub": "Ver en GitHub",
 
+    "proyectos.java.nombre": "☕ Sistema de Reservas - Backend con Spring Boot",
+    "proyectos.java.descripcion": "API REST desarrollada en Java utilizando Spring Boot, con arquitectura por capas, validaciones automáticas y manejo global de errores. Implementa un CRUD de usuarios siguiendo buenas prácticas de desarrollo backend.",
+    "proyectos.java.tecnologiasUsadasStrong": "Tecnologías usadas: ",
+    "proyectos.java.verGithub": "Ver en GitHub",
+
     "contacto.titulo": "Contacto",
     "contacto.form.nombre": "Tu nombre",
     "contacto.form.email": "Tu email",
@@ -74,6 +79,12 @@ const traducciones = {
     "proyectos.descripcion": "A RESTful API for managing users and tasks, developed with FastAPI and SQLAlchemy. It includes JWT authentication, dependency management, and automatic documentation.",
     "proyectos.tecnologiasUsadasStrong": "Technologies used: ",
     "proyectos.verGithub": "View on GitHub",
+
+    "proyectos.java.nombre": "☕ Reservation System - Spring Boot Backend",
+    "proyectos.java.descripcion": "REST API developed in Java using Spring Boot, with layered architecture, automatic validations, and global error handling. It implements a user CRUD following backend development best practices.",
+    "proyectos.java.tecnologiasUsadasStrong": "Technologies used: ",
+    "proyectos.java.verGithub": "View on GitHub",
+
 
     "contacto.titulo": "Contact",
     "contacto.form.nombre": "Your name",
